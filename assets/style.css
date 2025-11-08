@@ -1,8 +1,58 @@
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f8f8; color: #333; }
-header, footer { background: #222; color: #fff; text-align: center; padding: 1rem; }
-main { max-width: 800px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-h1, h2 { color: #222; }
-.offer { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; }
-.offer img { max-width: 100%; border-radius: 8px; }
-a { color: #0066cc; text-decoration: none; }
-a:hover { text-decoration: underline; }
+/* layout principale */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+/* colonna centrale */
+.container {
+  max-width: 600px;          /* larghezza della colonna */
+  margin: 30px auto;         /* centra la colonna nella pagina */
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* centra gli elementi orizzontalmente */
+}
+
+/* titolo */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* stile per gli iframe (anteprime dei post) */
+.container iframe,
+.container .post-iframe {
+  width: 100%;
+  max-width: 550px;          /* larghezza massima dell'iframe */
+  display: block;
+  margin: 0 auto 1px auto;  /* centra l'iframe e separazione verso il basso */
+  border: none;
+  height: 250px;             /* puoi regolare l'altezza */
+}
+
+/* stile del contenuto interno dei post (quando il post carica ../style.css) */
+.post {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 0 auto;            /* centra il blocco dentro l'iframe */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 520px;          /* larghezza della "bolla" dentro l'iframe */
+  box-sizing: border-box;
+}
+
+/* link e testo */
+.post a {
+  color: #1a73e8;
+  text-decoration: none;
+  word-break: break-word;
+}
+.post a:hover { text-decoration: un
+
+
